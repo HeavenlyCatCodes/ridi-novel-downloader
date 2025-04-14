@@ -2,6 +2,10 @@
 
 Ridi Downloader is a Chrome extension designed to automate the process of downloading chapters from Ridibooks novels. It allows users to download multiple chapters sequentially, customize file names, set a starting episode number, and configure wait times between downloads.
 
+## Important
+
+You must set the episode number correctlly if you are not downloading from first episode/chapter otherwise the output file names will start from 1 by default.
+
 ---
 
 ## Features
