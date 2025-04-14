@@ -4,7 +4,7 @@ Ridi Downloader is a Chrome extension designed to automate the process of downlo
 
 ## Important
 
-You must set the episode number correctlly if you are not downloading from first episode/chapter otherwise the output file names will start from 1 by default.
+You must set the episode number correctlly if you are not downloading from first episode/chapter otherwise the output file names will start from 1 by default. You must be careful while downloading locked chapters. It'll just download blank page if you try to download locked chapters.
 
 ---
 
