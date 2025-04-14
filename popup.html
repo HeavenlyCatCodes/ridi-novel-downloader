@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ridi Downloader</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 24px;
+      color: #333;
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-size: 14px;
+      color: #555;
+    }
+
+    input[type="number"] {
+      width: 100%;
+      padding: 5px;
+      font-size: 14px;
+      margin-top: 5px;
+    }
+
+    button {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      font-size: 16px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button#downloadMultiple {
+      background-color: #4CAF50; /* Green */
+      color: white;
+    }
+
+    button#stopDownload {
+      background-color: #f44336; /* Red */
+      color: white;
+    }
+
+    .progress-container {
+      margin-top: 20px;
+    }
+
+    .progress-bar {
+      width: 100%;
+      height: 10px;
+      background-color: #ddd;
+    }
+
+    .progress {
+      height: 100%;
+      background-color: #4CAF50; /* Green */
+      width: 0%;
+    }
+
+    .status-message {
+      margin-top: 10px;
+      font-size: 14px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>Ridi Downloader</h1>
+  
+  <label for="startEpisodeNumber">Starting episode number:</label>
+  <input type="number" id="startEpisodeNumber" value="1" min="1">
+  
+  <label for="episodeCount">Number of chapters to download:</label>
+  <input type="number" id="episodeCount" value="10" min="1">
+
+  <label for="waitTime">Wait time between chapters (seconds):</label>
+  <input type="number" id="waitTime" value="3" min="1">
+
+  <button id="downloadMultiple">Start Download</button>
+  <button id="stopDownload">Stop Download</button>
+
+  <div class="progress-container">
+    <div class="progress-bar">
+      <div class="progress" id="progressBar"></div>
+    </div>
+    <p class="status-message" id="statusMessage"></p>
+  </div>
+</div>
+
+<script src="popup.js"></script>
+</body>
+</html>
